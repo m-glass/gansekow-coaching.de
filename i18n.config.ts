@@ -69,7 +69,7 @@ export default defineI18nConfig(() => ({
       title: '{pageTitle} - Gansekow Coaching',
       name: 'Astrid Gansekow',
       coaching: 'Coaching',
-      email: 'astrid@gansekow-coaching.de',
+      email: "astrid{'@'}gansekow-coaching.de",
       website: 'gansekow-coaching.de',
       nav: {
         home: 'Home',
