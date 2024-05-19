@@ -33,10 +33,7 @@ definePageMeta({
         />
       </div>
       <div class="mb-24 flex flex-col gap-6 lg:mb-0">
-        <div class="flex flex-row gap-4">
-          <a :class="{ '!text-magenta': locale === 'en' }" @click="setLocale('en')">EN</a>
-          <a :class="{ '!text-magenta': locale === 'de' }" @click="setLocale('de')">DE</a>
-        </div>
+        <LangSwitcher />
         <NuxtLinkLocale to="why-coaching" class="!text-magenta">
           <h1>{{ $t('nav.whyCoaching') }}</h1>
         </NuxtLinkLocale>
