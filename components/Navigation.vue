@@ -9,7 +9,7 @@ const toggleMenu = () => (menuOpen.value = !menuOpen.value);
 
 <template>
   <div
-    class="sticky top-0 flex w-full flex-row items-center justify-between bg-white py-4"
+    class="sticky top-0 z-50 flex w-full flex-row items-center justify-between bg-white py-4"
   >
     <NuxtLinkLocale to="/" class="flex flex-row items-center gap-4 !text-magenta">
       <NuxtImg src="/logo.svg" class="h-14" />

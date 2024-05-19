@@ -68,7 +68,10 @@ definePageMeta({
         <div id="my-cal-inline" style="width: 100%; height: 100%; overflow: scroll"></div>
       </div>
       <div class="w-full xl:w-1/2">
-        <NuxtImg class="m-auto mt-6 max-w-md rounded" src="astrid_gansekow.jpg" />
+        <NuxtImg
+          class="m-auto mt-6 max-w-full rounded lg:max-w-md"
+          src="astrid_gansekow.jpg"
+        />
       </div>
     </div>
   </div>
