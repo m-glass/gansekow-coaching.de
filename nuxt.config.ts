@@ -26,7 +26,7 @@ export default defineNuxtConfig({
         iso: 'de-De',
       },
       {
-        name: 'Englisch',
+        name: 'English',
         code: 'en',
         iso: 'en-US',
       },

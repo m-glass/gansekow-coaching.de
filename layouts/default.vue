@@ -28,8 +28,35 @@ const title = computed(() => t('title', { pageTitle: t(route.meta.title) }));
           <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
         </template>
       </Head>
-      <Body class="min-h-screen w-full">
-        <slot />
+      <Body>
+        <div class="flex flex-row">
+          <aside
+            class="sticky top-0 hidden h-screen flex-col items-start justify-between bg-magenta p-10 text-white lg:flex"
+          >
+            <NuxtLinkLocale to="/" class="flex flex-row items-center justify-start gap-4">
+              <NuxtImg src="/logo_white.svg" class="h-24" />
+              <div>
+                <h2>{{ $t('name') }}</h2>
+                <h2 class="!font-light">{{ $t('coaching') }}</h2>
+              </div>
+            </NuxtLinkLocale>
+            <div class="flex flex-col items-start gap-6 lg:mb-0">
+              <LangSwitcher class="!text-white" />
+              <NuxtLinkLocale to="about" class="align-right !text-white">
+                <h1 class="!font-light">{{ $t('nav.about') }}</h1>
+              </NuxtLinkLocale>
+              <NuxtLinkLocale to="prices" class="!text-white">
+                <h1 class="!font-light">{{ $t('nav.prices') }}</h1>
+              </NuxtLinkLocale>
+              <NuxtLinkLocale to="contact" class="!text-white">
+                <h1 class="!font-light">{{ $t('nav.contact') }}</h1>
+              </NuxtLinkLocale>
+            </div>
+          </aside>
+          <main>
+            <slot />
+          </main>
+        </div>
       </Body>
     </Html>
   </div>
@@ -40,16 +67,24 @@ const title = computed(() => t('title', { pageTitle: t(route.meta.title) }));
   font-family: 'Noto Sans', sans-serif;
 }
 
+h1 {
+  @apply text-4xl font-bold;
+}
+
+h2 {
+  @apply text-2xl font-bold;
+}
+
 p {
-  @apply text-lg font-semibold leading-tight text-black;
+  @apply text-lg leading-snug text-black;
 }
 
 a {
-  @apply cursor-pointer !font-semibold !text-black hover:opacity-90;
+  @apply cursor-pointer hover:opacity-90;
 }
 
 .page-container {
-  @apply m-auto px-10 pb-20 md:px-20 xl:px-40;
+  @apply m-auto px-10 py-4 md:px-20 lg:p-10 xl:px-40;
 }
 
 .text {

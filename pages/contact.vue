@@ -58,21 +58,15 @@ definePageMeta({
 <template>
   <div class="page-container">
     <Navigation />
-    <div class="flex flex-col items-start justify-start gap-10 lg:flex-row">
-      <div class="text w-full xl:w-1/2">
-        <p>{{ $t('name') }}<br />{{ $t('contact.p1') }}</p>
-        <p>
-          Email: <a :href="`mailto:${$t('email')}`">{{ $t('email') }}</a>
-        </p>
-        <p>{{ $t('contact.p2') }}</p>
-        <div id="my-cal-inline" style="width: 100%; height: 100%; overflow: scroll"></div>
-      </div>
-      <div class="w-full xl:w-1/2">
-        <NuxtImg
-          class="m-auto mt-6 max-w-full rounded lg:max-w-md"
-          src="astrid_gansekow.jpg"
-        />
-      </div>
+    <div class="text">
+      <h2>{{ $t('nav.contact') }}</h2>
+      <p>{{ $t('name') }}<br />{{ $t('contact.p1') }}</p>
+      <p>
+        Email: <a :href="`mailto:${$t('email')}`">{{ $t('email') }}</a>
+      </p>
+      <p>{{ $t('contact.p2') }}</p>
+      <div id="my-cal-inline" style="width: 100%; height: 100%; overflow: scroll"></div>
+      <NuxtImg class="mt-6 max-w-full rounded lg:max-w-md" src="astrid_gansekow.jpg" />
     </div>
   </div>
 </template>

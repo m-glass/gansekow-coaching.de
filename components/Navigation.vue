@@ -9,7 +9,7 @@ const toggleMenu = () => (menuOpen.value = !menuOpen.value);
 
 <template>
   <div
-    class="sticky top-0 z-50 flex w-full flex-row items-center justify-between bg-white py-4"
+    class="sticky top-0 z-50 flex w-full flex-row items-center justify-between bg-white pb-4 !text-magenta lg:hidden"
   >
     <NuxtLinkLocale to="/" class="flex flex-row items-center gap-4 !text-magenta">
       <NuxtImg src="/logo.svg" class="h-14" />
@@ -18,20 +18,7 @@ const toggleMenu = () => (menuOpen.value = !menuOpen.value);
         <h3 class="-mt-1 !font-normal">{{ $t('coaching') }}</h3>
       </div>
     </NuxtLinkLocale>
-    <nav class="hidden flex-row items-center space-x-4 font-bold text-gray-600 lg:flex">
-      <NuxtLinkLocale to="why-coaching">{{ $t('nav.whyCoaching') }}</NuxtLinkLocale>
-      <p>/</p>
-      <NuxtLinkLocale to="about">{{ $t('nav.about') }}</NuxtLinkLocale>
-      <p>/</p>
-      <NuxtLinkLocale to="prices">{{ $t('nav.prices') }}</NuxtLinkLocale>
-      <p>/</p>
-      <NuxtLinkLocale to="contact">{{ $t('nav.contact') }}</NuxtLinkLocale>
-      <p>//</p>
-      <div class="flex flex-row gap-4 text-base font-medium">
-        <LangSwitcher />
-      </div>
-    </nav>
-    <p class="cursor-pointer text-magenta lg:hidden" @click="toggleMenu">Menu</p>
+    <p class="cursor-pointer text-magenta" @click="toggleMenu">Menu</p>
     <Transition>
       <nav
         v-if="menuOpen"
@@ -41,9 +28,6 @@ const toggleMenu = () => (menuOpen.value = !menuOpen.value);
           {{ $t('nav.close') }}
         </p>
         <LangSwitcher />
-        <NuxtLinkLocale to="why-coaching" class="!text-magenta">
-          <h1>{{ $t('nav.whyCoaching') }}</h1>
-        </NuxtLinkLocale>
         <NuxtLinkLocale to="about" class="!text-magenta">
           <h1>{{ $t('nav.about') }}</h1>
         </NuxtLinkLocale>
