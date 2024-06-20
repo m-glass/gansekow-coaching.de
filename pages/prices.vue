@@ -7,7 +7,7 @@ definePageMeta({
 <template>
   <div class="page-container">
     <Navigation />
-    <ImageFrame src="catherine-kay-greenup-3.jpg" copyright="Catherine Kay Greenup" />
+    <ImageFrame src="erol_ahmed.jpg" copyright="Erol Ahmed" />
     <div class="text">
       <h2>{{ $t('prices.h1') }}</h2>
       <p>{{ $t('prices.h1p1') }}</p>

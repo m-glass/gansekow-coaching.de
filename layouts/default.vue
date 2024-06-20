@@ -42,6 +42,9 @@ const title = computed(() => t('title', { pageTitle: t(route.meta.title) }));
             </NuxtLinkLocale>
             <div class="flex flex-col items-start gap-6 lg:mb-0">
               <LangSwitcher class="!text-white" />
+              <NuxtLinkLocale to="/" class="!text-white">
+                <h1 class="!font-light">{{ $t('nav.whyCoaching') }}</h1>
+              </NuxtLinkLocale>
               <NuxtLinkLocale to="about" class="align-right !text-white">
                 <h1 class="!font-light">{{ $t('nav.about') }}</h1>
               </NuxtLinkLocale>

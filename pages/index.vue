@@ -9,8 +9,9 @@ definePageMeta({
 <template>
   <div class="page-container">
     <Navigation />
-    <ImageFrame src="catherine-kay-greenup-1.jpg" copyright="Catherine Kay Greenup" />
-    <div class="text">
+    <ImageFrame src="annie_spratt.jpg" copyright="Annie Spratt" />
+    <div class="text pt-10">
+      <h1>{{ $t('home.welcome') }}</h1>
       <h2>{{ $t('whyCoaching.h1') }}</h2>
       <p>
         {{ $t('whyCoaching.h1p1') }}
@@ -30,6 +31,7 @@ definePageMeta({
       <p>
         {{ $t('whyCoaching.h2p2') }}
       </p>
+      <h2>{{ $t('home.whatClientsSay') }}</h2>
       <Testimonial
         :quote="$t('home.testimonial1.quote')"
         :name="$t('home.testimonial1.name')"

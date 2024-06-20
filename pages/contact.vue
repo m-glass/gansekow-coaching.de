@@ -66,7 +66,6 @@ definePageMeta({
       </p>
       <p>{{ $t('contact.p2') }}</p>
       <div id="my-cal-inline" style="width: 100%; height: 100%; overflow: scroll"></div>
-      <NuxtImg class="mt-6 max-w-full rounded lg:max-w-md" src="astrid_gansekow.jpg" />
     </div>
   </div>
 </template>

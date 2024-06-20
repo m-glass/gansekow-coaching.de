@@ -28,6 +28,9 @@ const toggleMenu = () => (menuOpen.value = !menuOpen.value);
           {{ $t('nav.close') }}
         </p>
         <LangSwitcher />
+        <NuxtLinkLocale to="/" class="!text-magenta">
+          <h1>{{ $t('nav.whyCoaching') }}</h1>
+        </NuxtLinkLocale>
         <NuxtLinkLocale to="about" class="!text-magenta">
           <h1>{{ $t('nav.about') }}</h1>
         </NuxtLinkLocale>
