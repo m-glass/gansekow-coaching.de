@@ -21,8 +21,8 @@ definePageMeta({
       </p>
       <p>
         {{ $t('whyCoaching.h1p3') }}
-        <NuxtLinkLocale to="contact">{{ $t('whyCoaching.h1p3LinkText') }}</NuxtLinkLocale
-        >.
+        <NuxtLinkLocale to="contact">{{ $t('whyCoaching.h1p3LinkText') }}</NuxtLinkLocale>
+        .
       </p>
       <h2>{{ $t('whyCoaching.h2') }}</h2>
       <p>

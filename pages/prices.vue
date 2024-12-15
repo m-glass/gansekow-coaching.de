@@ -35,5 +35,13 @@ definePageMeta({
         {{ $t('prices.h1p12') }}
       </p>
     </div>
+    <div class="text">
+      <h2>{{ $t('prices.h2') }}</h2>
+      <p>
+        {{ $t('prices.h2p1pre') }}
+        <NuxtLinkLocale to="contact">{{ $t('prices.h2p1LinkText') }}</NuxtLinkLocale>
+        {{ $t('prices.h2p1post') }}
+      </p>
+    </div>
   </div>
 </template>

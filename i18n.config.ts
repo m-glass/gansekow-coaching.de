@@ -14,11 +14,13 @@ export default defineI18nConfig(() => ({
         about: 'Über mich',
         prices: 'Preise',
         contact: 'Kontakt',
+        imprint: 'Impressum',
+        privacy: 'Datenschutz',
         close: 'Schließen',
       },
       home: {
         welcome: 'Hallo und herzlich willkommen',
-        whatClientsSay: 'Was Kient*innen sagen',
+        whatClientsSay: 'Was Klient*innen sagen',
         testimonial1: {
           quote:
             'Astrid hat mir sehr geholfen, herauszufinden, wo ich beruflich hin will. Sie stellte immer hilfreiche Fragen und brachte mich dazu, darüber nachzudenken, was ich wollte und warum. Auf diesem Weg wurde ich sowohl selbstbewusster als auch selbstreflektierter.',
@@ -26,7 +28,7 @@ export default defineI18nConfig(() => ({
         },
         testimonial2: {
           quote:
-            'Meine Sitzungen mit Astrid waren sehr produktiv. Die Ergebnisse waren schnell sichtbar. Sie hat mir geholfen, mein Selbstvertrauen zu stärken und meine kurzfristigen Ziele zu strukturieren, und das alles auf sehr professionelle Weise. Ich habe mich bei ihr wohl gefühlt, so dass es leicht war, mich zu öffnen und schnelle Ergebnisse zu erzielen. Ich kann sie sehr empfehlen.',
+            'Meine Sitzungen mit Astrid waren sehr produktiv. Die Ergebnisse waren schnell sichtbar. Sie hat mir geholfen, sowohl mein Selbstvertrauen zu stärken als auch meine kurzfristigen Ziele zu strukturieren und das alles auf sehr professionelle Weise. Ich habe mich bei ihr sehr wohl gefühlt, sodass es leicht war, mich zu öffnen und schnelle Ergebnisse zu erzielen. Ich kann sie auf jeden Fall weiterempfehlen.',
           name: 'Umida M., Fashion-Designerin',
         },
       },
@@ -48,7 +50,7 @@ export default defineI18nConfig(() => ({
         h1p4: 'Auf meinem Weg habe ich zahlreiche Erfahrungen gemacht und wurde von unterschiedlichen Menschen und Situationen inspiriert. Ich habe gelernt, dass Coaching ein wertvolles Werkzeug sein kann, um die richtigen Pfade eher zu sehen und zu beschreiten. Nicht jede Person hat von Anfang an ein klares Ziel oder eine voll ausgereifte Idee im Kopf — oft entwickeln sich diese erst. Denn das Leben passiert ungeplant und kann dich mitreißen. Für mich liegt die Kraft des Coachings darin, Menschen zu helfen, den neuen Möglichkeiten offen und außerhalb der gewöhnlichen Denkmuster zu begegnen. Coaching schafft Raum für Reflektion, eröffnet Perspektiven und unterstützt dabei, die eigene Reise mit mehr Klarheit und Selbstbewusstsein zu gestalten.',
       },
       prices: {
-        h1: 'Preise',
+        h1: 'Preise Einzelpersonen',
         h1p1: 'Da Solidarität für mich eine bedeutende Rolle spielt, biete ich drei verschiedene Preisoptionen an, welche sich an Ihrem Jahreseinkommen orientieren. Es besteht dabei keine Nachweispflicht.',
         h1p2: 'Preisstufe A = Bruttojahreseinkommen unter 30.000 €',
         h1p3: 'Preisstufe B = Bruttojahreseinkommen von 30.001 € bis 50.000 €',
@@ -61,10 +63,15 @@ export default defineI18nConfig(() => ({
         h1p10: '(A) 80 €',
         h1p11: '(B) 130 €',
         h1p12: '(C) 140 €',
+        h2: 'Preise für Teams und Organisationen',
+        h2p1pre:
+          'Für Teams und Organisationen erstelle ich Ihnen gerne ein individuelles Angebot. Bitte',
+        h2p1LinkText: ' kontaktieren Sie mich ',
+        h2p1post: 'für weitere Informationen.',
       },
       contact: {
         p1: 'Personal Development Coachin',
-        p2: 'Wir können uns gerne in einem Videocall kennenlernen. Du kannst dir hier direkt einen Wunschtermin vereinbaren:',
+        p2: 'Wir können uns gerne in einem Videocall kennenlernen. Du kannst hier direkt einen Wunschtermin vereinbaren:',
       },
     },
     en: {
@@ -79,6 +86,8 @@ export default defineI18nConfig(() => ({
         about: 'About me',
         prices: 'Prices',
         contact: 'Contact',
+        imprint: 'Imprint',
+        privacy: 'Privacy',
         close: 'Close',
       },
       home: {
@@ -113,7 +122,7 @@ export default defineI18nConfig(() => ({
         h1p4: 'I have had numerous experiences along the way and have been inspired by different people and situations. I have learned that coaching can be a valuable tool for seeing and following the right paths sooner. Not every person has a clear goal or a fully developed idea in mind from the outset - these often develop over time. Because life happens unplanned and can sweep you away. For me, the power of coaching lies in helping people to approach new possibilities with an open mind and outside their usual thought patterns. Coaching creates space for reflection, opens up perspectives and supports you in shaping your own journey with more clarity and self-confidence.',
       },
       prices: {
-        h1: 'Prices',
+        h1: 'Prices for individuals',
         h1p1: 'As solidarity plays an important role for me, I offer three different price options based on your annual income. There is no obligation to provide proof.',
         h1p2: 'Price level A = gross annual income under € 30,000',
         h1p3: 'Price level B = gross annual income from € 30,001 to € 50,000',
@@ -126,10 +135,15 @@ export default defineI18nConfig(() => ({
         h1p10: '(A) € 80',
         h1p11: '(B) € 130',
         h1p12: '(C) € 140',
+        h2: 'Prices for teams and organizations',
+        h2p1pre:
+          'For teams and organizations, I am happy to create an individual offer for you. Please',
+        h2p1LinkText: ' contact me ',
+        h2p1post: 'for further information.',
       },
       contact: {
         p1: 'Personal Development Coach',
-        p2: 'We can get to know each other in a video call. You can make an appointment directly here:',
+        p2: 'We can get to know each other in a video call. You can book an appointment here:',
       },
     },
   },

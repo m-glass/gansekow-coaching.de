@@ -55,6 +55,14 @@ export default defineNuxtConfig({
         en: '/',
         de: '/',
       },
+      imprint: {
+        en: '/imprint',
+        de: '/impressum',
+      },
+      privacy: {
+        en: '/privacy',
+        de: '/datenschutz',
+      },
     },
   },
 });
