@@ -22,8 +22,6 @@ definePageMeta({
 
       <p>87463 Dietmannsried</p>
 
-      <p><b>Telefon:</b> <a href="tel:017683808844">017683808844</a></p>
-
       <p>
         <b>Email: </b>
         <a href="mailto:astrid@gansekow-coaching.de">astrid@gansekow-coaching.de</a

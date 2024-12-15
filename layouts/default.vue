@@ -58,6 +58,14 @@ const title = computed(() => t('title', { pageTitle: t(route.meta.title) }));
           </aside>
           <main>
             <slot />
+            <div class="page-container flex flex-row gap-6">
+              <NuxtLinkLocale to="imprint" class="!text-white">
+                <p class="text-sm !font-light">{{ $t('nav.imprint') }}</p>
+              </NuxtLinkLocale>
+              <NuxtLinkLocale to="privacy" class="!text-white">
+                <p class="text-sm !font-light">{{ $t('nav.privacy') }}</p>
+              </NuxtLinkLocale>
+            </div>
           </main>
         </div>
       </Body>
