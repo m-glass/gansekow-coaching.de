@@ -61,11 +61,18 @@ definePageMeta({
           >
         </li>
       </ul>
-      <h2 id="m3">Verantwortlicher</h2>
-      <p>Astrid Gansekow<br />Dolziger Straße 36<br />10247 Berlin</p>
+      <h2 id="m3">Verantwortliche</h2>
+      <p>Astrid Gansekow</p>
+
+      <p>Welserstraße 3</p>
+
+      <p>c/o MDC Management#195</p>
+
+      <p>87463 Dietmannsried</p>
+
       <p>
         E-Mail-Adresse:
-        <a href="mailto:astrid.gansekow@gmail.com">astrid.gansekow@gmail.com</a>
+        <a href="mailto:astrid@gansekow-coaching.de">astrid@gansekow-coaching.de</a>
       </p>
 
       <h2 id="mOverview">Übersicht der Verarbeitungen</h2>
